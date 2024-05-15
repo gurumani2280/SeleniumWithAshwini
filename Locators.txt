@@ -1,0 +1,10 @@
+CSS selector syntax
+----------------------------
+
+tagname[attribute='value']
+
+tagname.classname
+
+tagname#id
+
+parentcssselector>childcssselector
