@@ -8,3 +8,7 @@ tagname.classname
 tagname#id
 
 parentcssselector>childcssselector
+eg:.form_group>input[id='user-name']
+
+
+tagname is not mandatory
