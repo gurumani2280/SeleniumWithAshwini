@@ -12,3 +12,30 @@ eg:.form_group>input[id='user-name']
 
 
 tagname is not mandatory
+
+==============================================
+
+xpath
+----------------------
+//tagname
+
+//tagname[@attribute='value']
+
+parentxpath/childxpath 
+
+(//table/a)[parent is table, child is tag a]
+
+In the entire html it will search for the table and inside the table it will search for immediate child tag a
+
+eg: //table//a
+
+In the entire html it will search for the table and inside the table it will search for any child, not just immediate child tag a
+
+
+
+
+
+
+
+
+
