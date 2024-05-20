@@ -7,6 +7,10 @@ tagname.classname
 
 tagname#id
 
+tagname[attribute='value']:nth-child[indexvalue]
+
+
+
 parentcssselector>childcssselector
 eg:.form_group>input[id='user-name']
 
@@ -21,6 +25,8 @@ xpath
 
 //tagname[@attribute='value']
 
+//tagname[@attribute='value'][indexing]
+
 parentxpath/childxpath 
 
 (//table/a)[parent is table, child is tag a]
@@ -30,6 +36,20 @@ In the entire html it will search for the table and inside the table it will sea
 eg: //table//a
 
 In the entire html it will search for the table and inside the table it will search for any child, not just immediate child tag a
+
+
+
+
+
+
+=========================================
+
+linkText
+findelementBy.linktext("a");
+
+==================
+
+Indexing works only with xpath
 
 
 
