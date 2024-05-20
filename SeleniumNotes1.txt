@@ -1,0 +1,88 @@
+launching chrome browser?launching Edge browser?launching firefox browser?
+
+opening/launching any url e.g. google.com or facebook.com?
+navigating back, forward, page refresh? 
+
+what is type of WebDriver? what is type of web element
+
+maximizing browser?minimizing browser?
+
+closing browser?
+
+getting page title? getting current url url? getting page source?
+
+identifiying element? list all locator in selenium?/or list eight methods of By class?
+
+how to perform click() operation?how to enter any text to text field?
+
+
+Every element does not have an id -­‐> static id, unique name,unique link text.
+For those elements we need to build xpath to find and then perform actions on them.
+Whatever we use to find an element, id, name, xpath, css -­‐> It should always be unique.
+It should only find one matching node unless we want to capture a list of elements.
+
+
+general syntax xpath?--(relative xpath)
+//tagName[@attribute='attributeValue']				
+//tagName[text()='text']
+//tagName[contains(@attribute,'attributeValue')]	
+//tagName[contains(text(),'text')]
+e.g.
+
+//a vs //input vs //table
+//table/a   vs //table//a
+
+Difference between single ‘/’ or double ‘//’
+Don’t use “*”, always use the tag name instead.
+
+Using Starts-­‐With to find the elements:
+Syntax://tag[starts-­‐with(attribute,‘value’)]
+Finding Login link://div[@id='navbar']//a[starts-­‐with(@class,'navbar-­‐link')]
+
+Parent            Syntax: xpath-­‐to-­‐some-­‐element//parent::<tag>
+Preceding Sibling Syntax: xpath-­‐to-­‐some-­‐element//preceding-­‐sibling::<tag>
+Following Sibling Syntax: xpath-­‐to-­‐some-­‐element//following-­‐sibling::<tag>
+
+
+general ccs syntax?
+e.g.  tagName[attribute='attributeValue']
+
+Element Displayed Example Text Box:
+input[id=displayed-­‐text]
+#displayed-­‐text
+input#displayed-­‐text
+
+input[class=displayed-­‐class]
+.displayed-­‐class
+input.displayed-­‐class
+
+Appending Classes .class1.class2.class3 -­‐>Until we find a unique element
+
+Using wildcards in CSS Selectors:
+“^” -­‐> Represents the starting text
+“$” -­‐> Represents the ending text
+“*” -­‐> Represents the text contained
+Syntax: tag[attribute<specialcharacter>=’value’]
+Examples:
+input[class='inputs'] -­‐> Only 1 matching node
+input[class^='inputs']           -­‐> Two matching nodes
+input[class='displayed-­‐class']  -­‐ No matching nodes
+input[class$='class']            -­‐> One matching node
+input[class*='displayed-­‐class'] -­‐> One matching node
+
+Finding Children
+cssSelector -­‐>10 matching nodes
+cssSelector > table
+cssSelector > #product-­‐> One matching node
+cssSelector > button -­‐> One matching node
+cssSelector > a
+cssSelector > input#name
+
+difference between findElement and findElements?
+1. return type       --
+2. single matching   --
+3. Multiple Matching --
+4. No Matching       --
+
+
+
