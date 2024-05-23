@@ -15,7 +15,7 @@ accessLevel -- public , protected, private or default
 
 accessModifier -- static or non-static
 
-returnType -- can be any dataType (any of 8 primitive or non primitive) or void
+returnType -- can be any dataType (any of 8 primitive or non primitive(class, Interface)) or void
 	returnType specifies what type of output method returns after processing
 	if method does not return anything then returnType for the method should be void
 	for non void method return statement is mandatory (return statement optional for void method)
