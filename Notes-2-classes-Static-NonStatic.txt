@@ -13,7 +13,7 @@ static members are those members which are declared with keyword static,
 static members include - static variables, static methods, static block or static initialization block (Sib)  
 
 static members can be accessed using className.memberName or className.memberName()
-A.test()
+A.test(), CommonUtils.sleep(3000);
 because static members will be loaded into static pool and name of static pool will be className
 class Loader will create static pool only once in an execution cycle
 static members will have only one copy 
@@ -55,3 +55,8 @@ write differences between static and non static
 if we need multiple copies we go for non static - like empoyeeId, studentId
 
 
+// this keyword is default refrence variable in java, it points to the current object
+// This refence variable is only available in non-static context(method, constructor, iib)
+// Local and globe variables can have same name, but local will be give the preference
+
+// Two local variables in two diff methods can have same name

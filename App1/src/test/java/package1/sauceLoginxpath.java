@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import utils.CommonUtils;
+
 public class sauceLoginxpath {
 
 	public static void main(String[] args) throws InterruptedException
@@ -21,7 +23,7 @@ public class sauceLoginxpath {
 		
 		//	tagname.classname	
 		driver.findElement(By.xpath("//input[@data-test='login-button']")).click();
-		Thread.sleep(5000);
+		CommonUtils.sleep(3000);
 		driver.findElement(By.xpath("//*[@id='add-to-cart-sauce-labs-backpack']")).click();
 		
 		
@@ -33,15 +35,15 @@ public class sauceLoginxpath {
 		driver.findElement(By.xpath("//button[@data-test='checkout']")).click();
 		
 		driver.findElement(By.xpath("//*[@id='first-name']")).sendKeys("first-name");
-		driver.findElement(By.cssSelector("#last-name")).sendKeys("last-name");
-		driver.findElement(By.cssSelector("#postal-code")).sendKeys("123456");
+		driver.findElement(By.xpath("//*[@id='last-name']")).sendKeys("last-name");
+		driver.findElement(By.xpath("//*[@id='postal-code']")).sendKeys("123456");
 		Thread.sleep(5000);
 		
-		driver.findElement(By.cssSelector("input[value='Continue']")).click();
+		driver.findElement(By.xpath("//input[@value='Continue']")).click();
 		
 		Thread.sleep(5000);
 		
-		driver.findElement(By.cssSelector("button[data-test='finish']")).click();
+		driver.findElement(By.xpath("//button[@data-test='finish']")).click();
 		
 		driver.quit();
 	
