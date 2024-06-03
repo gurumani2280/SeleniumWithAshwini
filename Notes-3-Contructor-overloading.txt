@@ -9,13 +9,33 @@ constructor will have same name as className
 constructor will never have any returnType
 constructor will always be non static 
 
+
+syntax:
+accessLevel ClassName(arguements) 
+{
+
+}
+
+
+eg:
+public A()
+{
+System.out.println("from A()");
+}
+
+This is not the constructor since it has a return type and constructor cannot have return type
+	void B()
+	{
+		System.out.println("from B!");
+	}
+
 constructor will be called/invoked/executed whenever an object is created 
 using new operator
 
 Every class will have at least one constructor
 default constructor by compiler
 
-No default constructor for user defined constructor
+There will not be any default constructor provided by the complier, if we create any user defined constructor inside the class
 
 why create constructor if there is default constructor?
 
@@ -35,6 +55,14 @@ advantages of constructor overloading
 
 
 this() calling statement 
+
+this calling statement this(), used to call another over loaded constructor, from one constructor, in same class.
+
+Rules for this calling statement:
+1. this() should be first statement inside the constructor only, Cannot be inside any other method.
+
+because of the above rule, we cannot have 2 this() inside a constructor
+
 ==========----------============-------------=========
 
 =============--------------================-------------===========
