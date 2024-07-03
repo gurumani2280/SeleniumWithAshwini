@@ -11,7 +11,7 @@ any object oriented programming language will have four principle
 Inheritance is one of the principle of Object oriented programming language
 which represent is Is-A relationship
 
-Inheritance means acquiring the features or properties of one clas into another
+Inheritance means acquiring the features or properties of one class into another
 (w.r.t classes)
 
 The class from which we are getting properties is called as parent class or
@@ -29,6 +29,7 @@ code maintainablity
 code optimization
 
 order of loading of non static members in case of sub class object creation
+First super class non-static members will be loaded, later its own class (sub-class) non-static members will be loaded.
 
 
 super() calling statement
@@ -64,9 +65,9 @@ maximum one
 we cannot develop both this() and super() inside the same constructor
 why?
 
-similarities between super() and this() calling statement
+similarities between super() and this() calling statement (Both should be the first statement)
 
-differences between this() and super() calling statement
+differences between this() and super() calling statement (This() used for calling same class overloaded constructor and super() used to call immediate super class constructor)
 
 
 ====----========
@@ -74,7 +75,7 @@ types of inheritance
 1. single level -- one sub class -- one super class 
 2. Multilevel -- one sub class inheriting from another sub class
 3. hybrid -- more than one sub class having same super class
-4. Multiple -- one subclass having multiple immediate super class
+4. Multiple -- one subclass having multiple immediate super class 
 
 In java multiple inheritance is not possible through class.
 through interface we can achieve multiple inheritance in java.
@@ -110,14 +111,16 @@ through method overriding , we can achieve polymorphism (run time polymorphism)
 to achieve method overriding 3 things are mandatory
 1. Inheritance
 2. Non static method (part of object)
-3. method Signature should be exactly same
+3. method Signature should be exactly same, only access specifier can be different/ return type can be co-variant(instead of super class, we can return the sub class)
 
+Co-variant (return type).
 
 when we perform method overridding, the super class implementation of the method 
 will be lost in the sub class, i.e. we will get the latest implemetation
 
 we can define method overridding as redefining the super class method in the
 sub class according to the needs of the sub class is called as Method overridding.
+
 
 ==---=== 
 super keyword
