@@ -78,7 +78,7 @@ changing the argument list means
 3) changing the position of the argument
 
 why?
-when comman task to be performed with difference in combination of
+when common task to be performed with difference in combination of
 arguments/input then we should go for method overloading
 
 eg 
