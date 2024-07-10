@@ -1,0 +1,34 @@
+Day1:
+
+1. Perform logout operation.
+2. Add to cart till the end.
+
+=============================================
+Day 2:
+
+1. COnvert the saucedemo code for css selector
+
+============================================
+
+Day 3:
+1. Convert saucedemo code for xpath.
+2. Practice locators with saucedemo
+
+================================================
+
+1. Navigate to the website https://demo.automationtesting.in/Register.html
+and click on all the checkboxes using forloop
+2. Capture all type attribute for input
+
+================================================
+
+1. Navigate to the website https://demo.automationtesting.in/Register.html
+and select the dropdown values, also print the values which are present for the dropdown
+language,country,select country and DOB
+
+Only select class can be used for select tag, for other tags we have to follow the manual step
+
+2. Diff btw findelement and findelements?
+3. Diff btw implicit and explicit wait
+
+==============================================================

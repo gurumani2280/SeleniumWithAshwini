@@ -1,0 +1,52 @@
+Task 1:
+Step 1:Open chromebrowser
+2. Maximize
+3. Navigate to url
+4. Capture pageTitle
+5. Capture currentUrl
+6. Capture Pagesource
+7. Quit
+
+Task 2:
+Step 1:Open chromebrowser
+2. Maximize
+3. Navigate to url1
+4. Navigate to url2
+5. Navigate to url3
+6. Navigate back to url2
+7. Navigate back to url1
+8. Navigate forward to URL2
+
+Task 3:
+Step 1:Open chromebrowser
+2. Maximize
+3. open google url
+4. Open C:// url
+5. get the current url
+6. get the title
+7. get the pagesource
+
+Task 4:
+Step 1:Open chromebrowser
+2. Maximize
+3. Open C:// url
+4. identifying element using the name locator
+5. Enter anyUserName in the text field
+6. Quit the browser
+
+Task 5:
+Step 1:Open chromebrowser
+2. Maximize
+3. Navigate to google url
+4. enter selenium in search box
+5. Click on search button
+6. Quit the browser
+
+Task 6:
+Step 1:Open chromebrowser
+2. Maximize
+3. enter selenium in search box and press on enter key
+4. Quit the browser
+
+Task 7:
+

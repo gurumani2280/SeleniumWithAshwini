@@ -1,0 +1,17 @@
+Implicit wait:
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+
+Explicit wait:
+
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+wait.until(ExpectedConditions.titleContains("Swag Labs"));
+
+some methods of ExpectedConditions
+alertIsPresent()
+attributeToBe()
+domAttributeToBe()
+InvisiblityOfAllElements()
+titleContains()
+urlConatins()

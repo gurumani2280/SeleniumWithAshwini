@@ -1,0 +1,87 @@
+1. launching chrome browser?launching Edge browser?launching firefox browser?
+WebDriver driver=new EdgeDriver();
+
+opening/launching any url e.g. google.com or facebook.com?
+navigating back, forward, page refresh? 
+driver.get("https://demo.automationtesting.in/Register.html");
+		
+
+2. what is type of WebDriver? what is type of web element
+* control the browser , control of particular web element/tag
+
+3. maximizing browser?minimizing browser?
+* driver.manage().window().maximize();
+
+4. closing browser?
+* driver.quit();, driver.close();
+
+5. getting page title? getting current url url? getting page source?
+driver.getCurrentUrl();
+driver.getPageSource();
+driver.getTitle();
+
+
+6.identifiying element? list all locator in selenium?/or list eight methods of By class?
+* driver.findelement id,name,linktext,partial linktext,css selector,xpath, tagname, class name
+
+7. how to perform click() operation?how to enter any text to text field?
+
+weblement , click method and webelement sendkeys method.
+
+driver.findElement(By.xpath("//input[@type='email']")).sendKeys("email@gmail.com");
+driver.findElement(By.xpath("//input[@value='FeMale']")).click();
+
+8. Every element does not have an id -­‐> static id, unique name,unique link text.
+For those elements we need to build xpath to find and then perform actions on them.
+Whatever we use to find an element, id, name, xpath, css -­‐> It should always be unique.
+It should only find one matching node unless we want to capture a list of elements.
+
+9. write down the methods of webdriver interface we have used so far:
+*get
+*quit
+*findelement
+*navigate
+*maximize
+*findelements
+*close
+
+
+10. write down the methods of webelement interface we have used so far:
+*click
+*Sendkeys
+*Clear
+*gettext
+*getAttribute()
+*getCssValue()
+
+11.write down the methods of select class we have used so far:
+selectByIndex
+SelectByvalue
+SelectByVisibletext
+This is applicable only for the tag with select classes. 
+
+eg:
+
+WebElement skilldropdown=driver.findElement(By.id("Skills"));
+Select s1=new Select(skilldropdown);
+
+
+12.Write down the exceptions faced, during selenium coding
+*No such element (Incorrect locator/ zero identified element in findelement method)
+*element not interactable (
+*StaleElementReferenceException (When we are not able to identify the locator after refresh/ navigating from one page to another)
+
+13. To click after entering data
+WebElement googleSearchBox= driver.findElement(By.name("q"));
+googleSearchBox.sendKeys("selenium", Keys.ENTER);
+
+14.To navigate to particular link
+driver.navigate().to("file:///C:/Ash/Emexo/SeleniumWithAshwini/BasicHtmlElement.html");
+
+15. Navigate front and back
+driver.navigate().back();
+driver.navigate().forward();
+
+
+16.HOw to refresh a page
+driver.navigate().refresh();
