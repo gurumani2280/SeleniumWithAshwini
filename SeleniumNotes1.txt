@@ -66,6 +66,8 @@ Select s1=new Select(skilldropdown);
 12.Write down the exceptions faced, during selenium coding
 *No such element
 *element not interactable
+* NoAlertPresentException
+* ElementNotInteractableException: element not interactable
 
 13. 
 

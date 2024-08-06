@@ -16,7 +16,7 @@ Q) why testng?/advantages of testng.
 	It has support for parameterizing test cases using @Parameters annotation
 	It allows data driven testing using @DataProvider annotation
 	It has different assertions that helps in checking the expected and actual results
-	Detailed (HTML) reports
+	Detailed (HTML) reports (Soft and hard assert, logger using reporter.log)
 
 
 Q) What are the annotations used in testng?
@@ -79,7 +79,7 @@ Q) What is the order of execution of @test in case of multiple @test in a file? 
 +How can we control the order?
 	The order of execution of @test is based on alphabetical order.
 	We can control the order of execution by giving priority.
-	Less value is given more priority.
+	Less value is given more priority.(-1,0,1,2,3 etc..)
 	
 Q) What is @DataProvider?
 	@DataProvider is used to provide datas to the @Test method.
@@ -90,6 +90,8 @@ Q) What is @DataProvider?
 Q) What is @Parameters?	(String param=x.getParameter("param1")
 	<parameter name="browser" value="chrome"/> is given testng.xml
 	@Parameters("browser") is given immediately after the @Before  and @Test annotation.
+	If we want to run from class level, if param values is not provided then optional value can be used
+        public void beforeMethod(@Optional("chrome") String browser)
 
 Q) What is the use of @Test(invocationCount=x)?
 

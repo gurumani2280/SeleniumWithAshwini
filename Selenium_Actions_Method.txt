@@ -1,0 +1,11 @@
+1. MoveToElement
+
+Creating action class object , we need to pass driver in the constructor
+We are identifying the element, on which mouse over operation should be performed
+Actual action is performed
+eg:	 
+Actions actions=new Actions(driver);
+WebElement menu = driver.findElement(By.linkText("Enabled"));
+actions.moveToElement(menu).perform();
+
+2. 

@@ -1,0 +1,3 @@
+JavascriptExecutor rv=(JavascriptExecutor) driver;
+		//String c="document.getElementById('firstname').value='admin'";
+		//rv.executeScript(c);
