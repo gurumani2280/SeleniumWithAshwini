@@ -34,3 +34,10 @@ Only select class can be used for select tag, for other tags we have to follow t
 ==============================================================
 
 1.(Auto-3) Creation of pages(product, your cart,checkout page,Overview page, checkout complete page) and usage of dataprovider, testng parameter. 
+
+=========================================================================
+
+1. Navigate to url http://demo.automationtesting.in/Windows.html.
+2. Click on the click button to open new tab.
+3. Click on the documentation link in the child window (switch to the child window)
+4. Try to open new separate window and new multiple window

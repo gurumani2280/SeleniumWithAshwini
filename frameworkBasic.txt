@@ -8,7 +8,7 @@ what are the advantages of automation framework?
 	1. generate results automatically for each scenario
 	2. reduce scripting efforts
 	3. manage application changes easily
-	4. easy maintaince of automation scripts
+	4. easy maintenance of automation scripts
 	5. managing dependencies automatically
 
 What are the types of Framework?
@@ -74,7 +74,35 @@ What are the types of Framework?
 	8. After executing test method, it will execute @AfterMethod which closes all browser of webdriver instance.
 		driver.quit(); 
 		it takes screenshot in case of failure using testng listener
+		eg:
+		public class Listeners implements ITestListener{
+
+		public void onTestFailure(ITestResult result) {
+		System.out.println("in onTestFailure");
+		System.out.println(result.getInstanceName());
+		String methodName = result.getName();
+		String fileName = methodName+"_"+
+				new SimpleDateFormat("ddMMMYY_HH.mm.ss.S").format(new Date());
+		System.out.println(methodName);
+		WebDriver driver  = ((BaseTest)result.getInstance()).driver;
+	    	SeleniumUtils.takeScreenShot(fileName, driver);
+		}
+
+
+		<listeners>
+		<listener class-name="com.utils.Listeners"></listener>
+		</listeners>
+ 		 <test thread-count="5" name="Test">
+    		<classes>
+      
+     		 <class name="com.tests.SauceInvalidLoginTest"/>
+      
+   		 </classes>
+
 
 	9. After executing all the scripts it will generate the result it html format 
 		in test-ouput folder. The important file will be emailable-report.html,
 		index.html, testng-failed.xml
+		
+		
+

@@ -70,6 +70,7 @@ Select s1=new Select(skilldropdown);
 *No such element (Incorrect locator/ zero identified element in findelement method)
 *element not interactable (
 *StaleElementReferenceException (When we are not able to identify the locator after refresh/ navigating from one page to another)
+* java.lang.ClassCastException: 
 
 13. To click after entering data
 WebElement googleSearchBox= driver.findElement(By.name("q"));
