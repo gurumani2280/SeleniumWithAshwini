@@ -63,6 +63,11 @@ add parameter
 
 ${suiteXmlFile}
 
-clean test -DsuiteXmlFile=testing.xml
+<suiteXmlFile>${suitexml}</suiteXmlFile> //pom.xml
 
-clean test -DsuiteXmlFile=$testngxml
+mvn clean test -Dsuitexml="testng2.xml"//command prompt
+
+
+clean test -Dsuitexml=$xmlFile // parameterized jenkin
+
+

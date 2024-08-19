@@ -14,4 +14,4 @@ git config --global user.name "Ashwini"
 8. git commit -m "message"
 9. git push (If asked for authorization, open the modal window and provide the authorization).
 10. git diff filename ->can provide the change made locally and in the repo
-11.
+11.git pull
