@@ -53,6 +53,11 @@ Indexing works only with xpath
 
 
 
+1. independt xpath
+
+2. move to comman parent using /..
+3. idenetify the dependent tags (like price/score)
+
 
 
 
